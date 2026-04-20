@@ -73,7 +73,7 @@ export function TodoProvider({ children }) {
   };
 
   return (
-    <TodoContext
+    <TodoContext.Provider
       value={{
         todos,
         addTodo,
@@ -87,6 +87,6 @@ export function TodoProvider({ children }) {
       }}
     >
       {children}
-    </TodoContext>
+    </TodoContext.Provider>
   );
 }
