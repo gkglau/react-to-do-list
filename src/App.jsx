@@ -1,4 +1,4 @@
-import { use } from "react";
+import { useContext } from "react";
 import { ChecklistsWrapper } from "./components/ChecklistsWrapper";
 import { Container } from "./components/Container";
 import { Dialog } from "./components/Dialog";
@@ -21,7 +21,7 @@ function App() {
     closeFormTodoDialog,
     selectedTodo,
     editTodo,
-  } = use(TodoContext);
+  } = useContext(TodoContext);
 
   const handleFormSubmit = (formData) => {
     if (selectedTodo) {
